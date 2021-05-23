@@ -2,7 +2,7 @@
  <div class="recommend">
    <div class="recommend-data" v-for="items in recommend" >
      <a v-bind:href="items.link">
-       <img :src="items.image" alt="">
+       <img v-lazy="items.image" alt="">
        <div class="recommend-text">{{items.title}}</div>
      </a>
    </div>
@@ -35,8 +35,8 @@ export default {
 .recommend .recommend-data img {
   width: 68px;
   height: 68px;
-  margin-bottom: 5px;
-  margin-top: 8px;
+  padding-bottom: 5px;
+  margin-top: 5px;
 }
 .recommend-text {
   font-size: 12px;

@@ -13,6 +13,5 @@ module.exports ={
         .set('components', resolve('./src/components'))
         .set('network', resolve('./src/network'))
         // .set('router', resolve('./src/router'))
-  }
-
+  },
 }

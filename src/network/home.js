@@ -7,3 +7,14 @@ export function getHomeMultiData() {
     url: '/home/multidata',
   })
 }
+/**导出商品分类的数据请求函数*/
+export function getMultiGoods(type,page) {
+  return request({
+    url: '/home/data',
+    params: {
+      type,
+      page,
+    }
+  })
+}
+

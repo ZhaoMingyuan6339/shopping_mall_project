@@ -12,23 +12,40 @@ const routes = [
   },
   {
     path: '/home',
-    component: () => import('../views/home/Home')
+    component: () => import('../views/home/Home'),
+    meta: {
+      isFootShow: true,
+    }
   },
   {
     path: '/category',
-    component: () => import('../views/category/Category')
+    component: () => import('../views/category/Category'),
+    meta: {
+      isFootShow: true,
+    }
   },
   {
     path: '/shoppingcar',
-    component: () => import('../views/shoppingcar/ShoppingCar')
+    component: () => import('../views/shoppingcar/ShoppingCar'),
+    meta: {
+      isFootShow: true,
+    }
   },
   {
     path: '/profile',
-    component: ()=> import('../views/profile/profile')
+    component: ()=> import('@/views/profile/Profile'),
+    meta: {
+      isFootShow: true,
+    }
+  },
+  {
+    path: '/detail/:id',
+    component: () => import('@/views/detail/Detail')
   }
 ]
 const router = new VueRouter({
   routes,
+  mode: "history"
 })
 
 

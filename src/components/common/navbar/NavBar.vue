@@ -20,10 +20,13 @@ export default {
 
 <style scoped>
 .nav-bar {
+  z-index: 1;
   display: flex;
   height: 44px;
   line-height: 44px;
   box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.09);
+  /*overflow: hidden;*/
+  /*padding-bottom: 44px;*/
 }
 .nav-left, .nav-right {
   width: 60px;
